@@ -25,9 +25,9 @@ La presente versión será para escritorio, tratando de simplificar el uso y fun
 - Titulo
 - Titulo Alternativo
 - Sinopsis
-- GeneroEstreno
+- Genero
+- Fecha de Estreno
 - Duración
-- Fecha de
 
 ### SERIE:
 

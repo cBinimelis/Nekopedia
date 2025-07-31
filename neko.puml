@@ -1,13 +1,97 @@
 @startuml Nekopedia
 
-class Item{
-    nombre: String
-    tipo: String
+class Anime{
+    titulo: String
+    titulo_alt: String
+    sinopsis: String
+    genero: Int
+    estreno: String
+    temporadas: Int
+    capitulos: Int
 }
 
-class Tipo{
+class Pelicula{
+    titulo: String
+    titulo_alt: String
+    sinopsis: 
+    genero: Int
+    estreno: String
+    duracion: Int
+}
+
+class Manga{
+    titulo: String
+    titulo_alt: String
+    sinopsis: String
+    genero: Int
+    estreno: String
+    tomos: Int
+    capitulos: Int
+}
+
+class Serie{
+    titulo: String
+    titulo_alt: String
+    sinopsis: String
+    genero: Int
+    estreno: String
+    temporadas: Int
+    capitulos: Int
+}
+
+class Libro{
+    titulo: String
+    sinopsis: String
+    genero: Int
+    estreno: String
+    id_autor: Int
+    nro_paginas: Int
+}
+
+class Autor{
     nombre: String
 }
 
-Item <|-- Tipo
+class Usuario{
+    nombre: String
+}
+
+class anime_usuario{
+    id_anime: Int
+    id_usuario: Int
+}
+
+class pelicula_usuario{
+    id_anime: Int
+    id_usuario: Int
+}
+
+class manga_usuario{
+    id_anime: Int
+    id_usuario: Int
+}
+
+class libro_usuario{
+    id_anime: Int
+    id_usuario: Int
+}
+
+class serie_usuario{
+    id_anime: Int
+    id_usuario: Int
+}
+
+
+Anime<|-- anime_usuario
+anime_usuario --|>Usuario
+Pelicula<|-- pelicula_usuario
+pelicula_usuario --|>Usuario
+Manga<|-- manga_usuario
+manga_usuario --|>Usuario
+Libro<|-- libro_usuario
+libro_usuario --|>Usuario
+Serie<|-- serie_usuario
+serie_usuario --|>Usuario
+Libro --|> Autor
+
 @enduml
