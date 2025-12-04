@@ -57,14 +57,15 @@ La presente versión será para escritorio, tratando de simplificar el uso y fun
 - Fecha de Estreno
 - Autor
 - N° Páginas
+- Saga a la que pertenece
 
 ## Notas
 
 - _Los títulos alternativos pueden quedar vacíos_
 - _Hay títulos con una sola letra_
 - _las fechas se guardan como texto para guardar fechas incompletas_
-- _Guardar imágenes (opcional)_
 - _Sección para guardar pendientes y que se verifique si es que está agregado_
 - _Poder editar en la misma página donde se ve la información del elemento_
 - _Casilla para comentarios breves_
 - _Las búsquedas pueden ser por título o título alternativo_
+- _Si es que un libro pertenece a una saga, agregar el nombre de la saga (opcional)_
