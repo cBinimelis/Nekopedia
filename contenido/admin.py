@@ -1,4 +1,12 @@
 from django.contrib import admin
+from .models import Genero, Contenido
+
+admin.site.register(Genero)
+admin.site.register(Contenido)
+
+"""_summary_
+
+from django.contrib import admin
 from .models import Genero, Subgenero, ContenidoMultimedia, Temporada, Episodio
 
 
@@ -87,3 +95,5 @@ class EpisodioAdmin(admin.ModelAdmin):
 
     def get_queryset(self, request):
         return super().get_queryset(request).select_related("temporada__contenido")
+        
+        """

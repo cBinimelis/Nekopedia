@@ -1,10 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import ContenidoMultimedia, Genero
+from .models import Genero
 
+def home(request):
+    pass
+"""
 
 def listado_contenido(request):
-    """Vista principal con búsqueda y filtros"""
+    ""Vista principal con búsqueda y filtros""
     contenidos = ContenidoMultimedia.objects.all()
 
     # Búsqueda por título
@@ -71,7 +74,7 @@ def listado_contenido(request):
 
 
 def detalle_contenido(request, pk):
-    """Vista de detalle de un contenido"""
+    ""Vista de detalle de un contenido""
     contenido = get_object_or_404(ContenidoMultimedia, pk=pk)
 
     # Si es una serie, obtener las temporadas y episodios
@@ -87,3 +90,4 @@ def detalle_contenido(request, pk):
     }
 
     return render(request, "contenido/detalle.html", context)
+"""
